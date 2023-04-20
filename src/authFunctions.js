@@ -17,6 +17,7 @@ function signUpWithEmail(){
     
     var lastName = document.getElementById("last_name").value;
 
+    var personID = document.getElementById("userTSAID").value;
       
     //create user:
     if(signUpPassword2 == signUpPassword){
@@ -32,7 +33,7 @@ function signUpWithEmail(){
                     userFirstName : firstName,
                    userLastName :lastName,
                    userEmal : signUpEmail,
-                    
+                    personID : personID,
                     
                 })
                 .then(()=>{       window.location.replace("./profile.html");});

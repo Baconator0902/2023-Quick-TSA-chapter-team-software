@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Events</title>
 </head>
+
 <body>
         <input type="checkbox" id="active">
     <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
@@ -23,15 +24,70 @@
 
         <section>
             <h1>
-                Upload files for your events here:
+                List more about yourself here!
             </h1>
+            <p>These questions are meant to better introduce yourself to your future teammates and advisors, so while they are optional, it is reccomended to fill out every blank for the best experience for you and your teammates.</p>
+           
         </section>
-        <input type="file" class="inputFile" id="fileInp" onchange="getFile(event)">
+        <form>
+            <label for="skills">What unique skills do you have that are relevant to TSA?</label>
+            <input type="skills" id="skills" name="skills"  >
+            
+            <label for="pastWorks">What past work can you share relevant to TSA?</label>
+            <input type="pastWorks" id="pastWorks" name="pastWorks"  >
 
+            <p>What TSA events are you most interested in? (ranked 1-6)</p>
+
+            <label for="eventInterest1">1: </label>
+            <input type="eventInterest1" id="eventInterest1" name="eventInterest1"  >
+
+            <label for="eventInterest2">2:</label>
+            <input type="eventInterest2" id="eventInterest2" name="eventInterest2"  >
+
+            <label for="eventInterest3">3:</label>
+            <input type="eventInterest3" id="eventInterest3" name="eventInterest3"  >
+
+            <label for="eventInterest4">4:</label>
+            <input type="eventInterest4" id="eventInterest4" name="eventInterest4"  >
+
+            <label for="eventInterest5">5:</label>
+            <input type="eventInterest5" id="eventInterest5" name="eventInterest5"  >
+
+            <label for="eventInterest6">6:</label>
+            <input type="eventInterest6" id="eventInterest6" name="eventInterest6"  >
+            
+            <label for="freeTime">Around how many hours a week do you have free for TSA work?</label>
+            <input type="freeTime" id="freeTime" name="freeTime"  >
+
+            <label for="communication">Which platforms are best for you to communicate with teammates on?</label>
+            <input type="communication" id="communication" name="communication"  >
+            
+            <label for="phoneNumber">Please list the best phone number to reach you at:</label>
+            <input type="phoneNumber" id="phoneNumber" name="phoneNumber"  >
+            
+            <label for="goodEmail">Please list the best email to reach you at:</label>
+            <input type="goodEmail" id="goodEmail" name="goodEmail" >
+            
+            <label for="availability">What is the highest level of competition you are comfortable competing at?</label>
+            <input type="availability" id="availability" name="availability" >
+
+            <label for="teamSizePref">What is the largest team you are comfortable working with?</label>
+            <input type="teamSizePref" id="teamSizePref" name="teamSizePref" >
+
+            <label for="yearsIn">How many years have you been in TSA?</label>
+            <input type="yearsIn" id="yearsIn" name="yearsIn" >
+            
+            <button id = "grandUpdater" class="buttonToAnimate" type="button">Click to Update Your Bio</button>
+            
+
+        </form>
         <footer>
             <p>Copyright @ 2023</p>
         </footer>
         <script type="module" src="/src/lockUserOut.js"></script>
         <script type="module" src="/src/firebaseInit.js"></script>
+     <script type="module" src="/src/interests.js"></script>
+
 </body>
+
 </html>

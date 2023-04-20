@@ -1,7 +1,8 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js';
 import { getAuth, setPersistence, browserSessionPersistence } from 'https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js';
 import { getDatabase } from 'https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js';
-
+import { getStorage, ref} from 'https://www.gstatic.com/firebasejs/9.17.2/firebase-storage.js'
+ 
 export * from 'https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js';
 export * from 'https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js';
 export * from 'https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js';
@@ -22,3 +23,6 @@ export const firebaseApp = initializeApp(firebaseConfig);
 export const auth = getAuth(firebaseApp);
 setPersistence(auth, browserSessionPersistence);
 export const database = getDatabase(firebaseApp);
+export const storage = getStorage(firebaseApp);
+
+export const storageRef = ref(storage, 'files');
