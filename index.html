@@ -3,13 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Software</title>
+
+    <style> 
+        #signUpDiv {
+            display: block;
+        }
+        #logInDiv {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Sign Up</h1>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <div class="wrapper">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="chapter.html">Chapter</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+      </div>
 
-    <input type="text" id="username">
-    <label for="username"></label> 
+    <div id="signUpDiv">
+        <h1>Sign Up</h1>
+
+        <input type="text" id="username">
+        <label for="username">Username</label> 
+        
+        <input type="password" id="password">
+        <label for="password">Password</label> 
+
+        <input type="password" id="password2">
+        <label for="password2">Password again</label>
+    
+        <input type="email" id="email">
+        <label for="email">Email</label>     
+    </div>
+
+    <div id="logInDiv">
+        <h1>Log In</h1>
+
+        <input type="text" id="username">
+        <label for="username">Username</label> 
+        
+        <input type="password" id="password">
+        <label for="password">Password</label> 
+    
+        <input type="email" id="email">
+        <label for="email">Email</label>   
+    </div>
+
+    <div>
+        <button id="logInButton" onclick="logIn()">Log In</button>
+        <button id="signUpButton" onclick="signUp()">Sign Up</button>
+    </div>
+
+    <footer>
+        <p>Copyright @ 2023</p>
+    </footer>
+    
+    <script>
+        signUpDiv = document.getElementById('signUpDiv');
+        signUpDiv = document.getElementById('signUpDiv');
+
+        function logIn() {
+            signUpDiv.style.display = 'none';
+            logInDiv.style.display = 'block';
+        }
+
+        function signUp() {
+            signUpDiv.style.display = 'block';
+            logInDiv.style.display = 'none';
+        }
+    </script>
+    
+
 </body>
 </html>
