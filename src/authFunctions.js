@@ -1,13 +1,54 @@
-import { firebaseApp, auth, data } from "./firebaseInit";
-import { createUserWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js' ;
+import { firebaseApp, auth, database } from "./firebaseInit.js";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut} from 'https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js' ;
+import{ set, ref } from 'https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js';
 
-function logInWithEmail(){
+const submitButton =  document.getElementById("submitButton");
 
-}
-
-function logOut(){
-
-}
 function signUpWithEmail(){
+   
+   //Variables for email, password, username
+    var signUpEmail = document.getElementById("email").value;
+    
+    var signUpPassword = document.getElementById("password1").value;
 
+    var signUpPassword2 = document.getElementById("password2").value;
+
+    var firstName = document.getElementById("first_name").value;
+    
+    var lastName = document.getElementById("last_name").value;
+
+      
+    //create user:
+    if(signUpPassword2 == signUpPassword){
+    createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword).then((userCredential) => {
+        var user = userCredential.user;
+      
+        onAuthStateChanged(auth, (user) => {
+        
+            if (user) {
+                var uid = user.uid;
+                set(ref(database, 'users/' + uid),{
+                    userId : uid,
+                    userFirstName : firstName,
+                   userLastName :lastName,
+                   userEmal : signUpEmail,
+                    
+                    
+                })
+                .then(()=>{       window.location.replace("./profile.html");});
+        
+            } else {
+            
+            }
+    });
+
+     })
+    .catch((error) => {
+// ..
+     });}
+     else{
+        window.alert("Passwords do not match!");
+     }
 }
+
+submitButton.addEventListener('click', signUpWithEmail);

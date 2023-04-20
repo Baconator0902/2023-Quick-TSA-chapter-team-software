@@ -3,88 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>Software</title>
-
-    <style> 
-        #signUpDiv {
-            display: block;
-        }
-        #logInDiv {
-            display: none;
-        }
-    </style>
+    <title>Home</title>
 </head>
 <body>
-    <input type="checkbox" id="active">
+        <input type="checkbox" id="active">
     <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
         <div class="wrapper">
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="chapter.html">Chapter</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="profile.html">Profile</a></li>
+              
+           
+                <li><a href="./login.html">Login?</a></li>
             </ul>
       </div>
 
-    <div id="signUpDiv">
-        <h1>Sign Up</h1>
-
-        <input type="text" id="username">
-        <label for="username">Username</label> 
+        <section>
+            <h1>
+                Sign Up?
+            </h1>
+        </section>
+        <form>
+           
+            <label for="first_name">First name*</label>
+            <input type="text" id="first_name" name="first_name" placeholder="John" required pattern="[A-Z][a-z]*">
+            <br>
+            <label for="last_name">Last name*</label>
+            <input type="text" id="last_name" name="last_name" placeholder="Doe" required pattern="[A-Z][a-z]*">
+            <br>
+            <label for="age">Birth date*</label>
+            <input type="text" id="age" name="age" required placeholder="MM/DD/YYYY" onfocus="(this.type='date')">
+            <br>
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="191-123-456-7890">
+            <br>
+            <label for="Email">Email*</label>
+            <input type="text" id="email" name="Email" placeholder="tothe.stars@gmail.com" required>
+            <br>
+         
+          
+            <label for="password1">password*</label>
+            <input type="password" id="password1" name="password1" required pattern="\S{8,}" placeholder="">
+            
+            <p style="font-size:medium;">*must be at least 8 characters</p>
+            <label for="password2">confirm password*</label>
+            <input type="password" id="password2" name="password2" required pattern="\S{8,}" placeholder="">
+            <br>
         
-        <input type="password" id="password">
-        <label for="password">Password</label> 
-
-        <input type="password" id="password2">
-        <label for="password2">Password again</label>
-    
-        <input type="email" id="email">
-        <label for="email">Email</label>     
-    </div>
-
-    <div id="logInDiv">
-        <h1>Log In</h1>
-
-        <input type="text" id="username">
-        <label for="username">Username</label> 
-        
-        <input type="password" id="password">
-        <label for="password">Password</label> 
-    
-        <input type="email" id="email">
-        <label for="email">Email</label>   
-    </div>
-
-    <div>
-        <button id="logInButton" onclick="logIn()">Log In</button>
-        <button id="signUpButton" onclick="signUp()">Sign Up</button>
-    </div>
-
+  
+            <button id = "submitButton" class="buttonToAnimate" type="button">Sign Up</button>
+            
+        </form>
     <footer>
         <p>Copyright @ 2023</p>
     </footer>
-    
-    <script>
-        signUpDiv = document.getElementById('signUpDiv');
-        signUpDiv = document.getElementById('signUpDiv');
-
-        function logIn() {
-            signUpDiv.style.display = 'none';
-            logInDiv.style.display = 'block';
-        }
-
-        function signUp() {
-            signUpDiv.style.display = 'block';
-            logInDiv.style.display = 'none';
-        }
-    </script>
-    
-
+    <script type="module" src="/src/authFunctions.js"></script>
+    <script type="module" src="/src/firebaseInit.js"></script>
 </body>
 </html>

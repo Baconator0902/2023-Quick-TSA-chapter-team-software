@@ -15,21 +15,48 @@
     <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
         <div class="wrapper">
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="chapter.html">Chapter</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="profile.html">Profile</a></li>
+        
+                <li><a href="./events.html">Events</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+                <li><a href="./signout.html">Sign Out</a></li>
             </ul>
       </div>
+    
+        <form>
+            <h1>Create a Chapter?</h1>
+            
+            <label for="chapterName">Chapter Name</label>
+            <input type="text" id="chapterName" name="chapterName" placeholder="Test Area ______" required>
+            <br>
+         
+          
+            <label for="TSA ID">Chapter ID</label>
+            <input type="chapterID" id="chapterID" name="ID" placeholder="2004"  required>
+            
+  
+            <button id = "chapterMaker" class="buttonToAnimate" type="button">Create Chapter</button>
+        </form>
 
-        <section>
-            <h1>
-                Chapter
-            </h1>
-        </section>
+        <form>
+            <h1>Join a Chapter?</h1>
+            <label for="chapterName">Chapter Name</label>
+            <input type="text" id="chapterName1" name="chapterName" placeholder="Test Area ______" required>
+            <br>
+         
+          
+            <label for="TSA ID">Chapter ID</label>
+            <input type="chapterID1" id="chapterID" name="ID" placeholder="2004"  required>
+            
+  
+            <button id = "joinButton" class="buttonToAnimate" type="button">Join Chapter</button>
+        </form>
 
         <footer>
             <p>Copyright @ 2023</p>
         </footer>
+        <script type="module" src="/src/lockUserOut.js"></script>
+        <script type="module" src="/src/firebaseInit.js"></script>
+        <script type="module" src="/src/createChapter.js"></script>
+        <script type="module" src="/src/joinChapter.js"></script>
 </body>
 </html>

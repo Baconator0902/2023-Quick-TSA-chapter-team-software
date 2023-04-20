@@ -15,21 +15,26 @@
     <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
         <div class="wrapper">
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="chapter.html">Chapter</a></li>
-                <li><a href="events.html">Events</a></li>
+
                 <li><a href="profile.html">Profile</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="chapter.html">Chapter</a></li>
+                
             </ul>
       </div>
 
         <section>
             <h1>
-                Home
+                Log Out?
+                <form>
+                    <button id = "logOutButton" class="buttonToAnimate" type="button">Log Out</button>
+                </form>
             </h1>
         </section>
-
     <footer>
         <p>Copyright @ 2023</p>
     </footer>
+    <script type="module" src="/src/firebaseInit.js"></script>
+    <script type="module" src="/src/logout.js"></script>
 </body>
 </html>

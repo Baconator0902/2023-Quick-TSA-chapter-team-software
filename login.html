@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Home</title>
+</head>
+<body>
+        <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <div class="wrapper">
+            <ul>
+
+
+                <li><a href="index.html">Sign Up?</a></li>
+            </ul>
+      </div>
+
+        <section>
+            <h1>
+                Log in?
+            </h1>
+        </section>
+        <form>
+    
+
+            <label for="loginEmail">Email*</label>
+            <input type="text" id="loginEmail" name="Email" placeholder="tothe.stars@gmail.com" required>
+            <br>
+         
+          
+            <label for="loginPassword">password*</label>
+            <input type="password" id="loginPassword" name="password1" required pattern="\S{8,}" placeholder="">
+            
+  
+            <button id = "loginButton" class="buttonToAnimate" type="button">Log In</button>
+                
+        </form>
+    <footer>
+        <p>Copyright @ 2023</p>
+    </footer>
+    <script type="module" src="/src/login.js"></script>
+    <script type="module" src="/src/firebaseInit.js"></script>
+</body>
+</html>

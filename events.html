@@ -15,21 +15,23 @@
     <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
         <div class="wrapper">
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="chapter.html">Chapter</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="profile.html">Profile</a></li>
+                <li><a href="./chapter.html">Chapter</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+                <li><a href="./signout.html">Sign Out</a></li>
             </ul>
       </div>
 
         <section>
             <h1>
-                Events
+                Upload files for your events here:
             </h1>
         </section>
+        <input type="file" class="inputFile" id="fileInp" onchange="getFile(event)">
 
         <footer>
             <p>Copyright @ 2023</p>
         </footer>
+        <script type="module" src="/src/lockUserOut.js"></script>
+        <script type="module" src="/src/firebaseInit.js"></script>
 </body>
 </html>
