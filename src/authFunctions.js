@@ -1,6 +1,6 @@
 import { firebaseApp, auth, database } from "./firebaseInit.js";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut} from 'https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js' ;
-import{ set, ref } from 'https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js';
+import{update,  set, ref } from 'https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js';
 
 const submitButton =  document.getElementById("submitButton");
 
@@ -33,7 +33,22 @@ function signUpWithEmail(){
                     userFirstName : firstName,
                    userLastName :lastName,
                    userEmal : signUpEmail,
-                    personID : personID,
+                    personID : "",
+                    mySkills : "",
+                    pastWorks : "",
+                    event1 : "",
+                    event2: "",
+                    event3: "",
+                    event4:"",
+                    event5: "",
+                    event6 : "",
+                    freeTime : "",
+                    coms: "",
+                    number: "",
+                    email : "",
+                    compLevel : "",
+                    maxTeam : "",
+                    yearsinClub: ""
                     
                 })
                 .then(()=>{       window.location.replace("./profile.html");});
