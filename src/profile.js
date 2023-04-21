@@ -39,12 +39,12 @@ return onValue(ref(database, 'users/' + userId), (snapshot) => {
 //intro
     document.getElementById("name").innerHTML = "Hello! I am " + firstName + " " + lastName;
   //loops for contacts  
-    if(phoneNumber != null && goodEmail == null){
+    if(phoneNumber != "" && goodEmail == ""){
     document.getElementById("contacts").innerHTML = "If after reading my portfolio you want to reach out, you can find me at the number: " + phoneNumber;
-    }else if(phoneNumber == null && goodEmail!= null){
+    }else if(phoneNumber == "" && goodEmail!= ''){
         document.getElementById("contacts").innerHTML = "If after reading my portfolio you want to reach out, you can find me at the email: " + goodEmail;
     }
-    else if(phoneNumber != null && goodEmail != null){
+    else if(phoneNumber != "" && goodEmail != ""){
         document.getElementById("contacts").innerHTML = "If after reading my portfolio you want to reach out, you can find me at the number: " + phoneNumber + " or the email: " + goodEmail;
     }
     else{
@@ -52,7 +52,7 @@ return onValue(ref(database, 'users/' + userId), (snapshot) => {
     }
     //
     //other socials
-if(otherSocials != null){
+if(otherSocials != ""){
     document.getElementById("otherPlatforms").innerHTML = "I am also comfortable communicating with: " + otherSocials;
 }
 else{
@@ -60,27 +60,27 @@ else{
 }
 //
 //Events
-    if(event1 != null ){
+    if(event1 != "" ){
         document.getElementById("event1").innerHTML = "I am most interested in the event " + event1;
     }
-     if(event2 != null){
+     if(event2 != ''){
         document.getElementById("event2").innerHTML = "I am the next most interested in the event " + event2;
     }
-     if(event3 != null){
+     if(event3 != ''){
         document.getElementById("event3").innerHTML = "I am the next most interested in the event " + event3;
     }
-     if(event4 != null){
+     if(event4 != ''){
         document.getElementById("event4").innerHTML = "I am the next most interested in the event " + event4;
     }
-     if(event5 != null){
+     if(event5 != ''){
         document.getElementById("event5").innerHTML = "I am the next most interested in the event " + event5;
     }
-     if(event6 != null){
+     if(event6 != ''){
         document.getElementById("event6").innerHTML = "I am the next most interested in the event " + event6;
     }
 
 //Team specs
-if(teamSize != null){
+if(teamSize != ''){
     document.getElementById("teamSize").innerHTML = "In these events, I am looking for teams no larger than " + teamSize;
 }
 else{
@@ -88,14 +88,14 @@ else{
 }
 //
 //Skills
-if(skills != null){
+if(skills != ''){
     document.getElementById("skills").innerHTML = "I can contribute certain skills including " + skills + " to the team";
 
 }
 else{
 
 }
-if(pastWork!= null){
+if(pastWork!= ''){
     document.getElementById("pastWork").innerHTML = "In the past I have worked on " + pastWork + " which would help for these events";
 
 }
@@ -103,14 +103,14 @@ else{
 
 }
 //
-if(levelofComp != null){
+if(levelofComp != ''){
     document.getElementById("levelofComp").innerHTML = "I am willing to go up to " + levelofComp + " and compete";
 }
-if(freeTime != null){
+if(freeTime != ''){
     document.getElementById("freeTime").innerHTML = "I can devote about " + freeTime + " hours a week to my projects";
 }
 
-if(yearsExp != null){
+if(yearsExp != ''){
     document.getElementById("yearsIn").innerHTML = "I have been a part of TSA for about " + yearsExp + " years";
 }
 },
