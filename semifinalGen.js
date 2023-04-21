@@ -454,21 +454,40 @@ function genStudyNote() {
     console.log(randomProperty);
     console.log(studyNote);
     console.log(motions[randomProperty].Title);
-    studyNote.innerHTML = "Title: " + motions[randomProperty].Title
-    + "</p><br><p>" + 
-    "Class: " + motions[randomProperty].Class
-    + "</p><br><p>" + 
-    "Interrupt: " + motions[randomProperty].Interrupt
-    + "</p><br><p>" + 
-    "Second: " + motions[randomProperty].Second
-    + "</p><br><p>" + 
-    "Debatable: " + motions[randomProperty].Debatable
-    + "</p><br><p>" + 
-    "Amendable: " + motions[randomProperty].Amendable
-    + "</p><br><p>" + 
-    "Vote: " + motions[randomProperty].Vote
-    + "</p><br><p>" + 
-    "Reconsider: " + motions[randomProperty].Reconsider
-    + "</p><br><p>" + 
-    "notes: " + motions[randomProperty].notes
+    if (motions[randomProperty].notes == "") {
+        studyNote.innerHTML = "Title: " + motions[randomProperty].Title
+        + "</p><br><p>" + 
+        "Class: " + motions[randomProperty].Class
+        + "</p><br><p>" + 
+        "Interrupt: " + motions[randomProperty].Interrupt
+        + "</p><br><p>" + 
+        "Second: " + motions[randomProperty].Second
+        + "</p><br><p>" + 
+        "Debatable: " + motions[randomProperty].Debatable
+        + "</p><br><p>" + 
+        "Amendable: " + motions[randomProperty].Amendable
+        + "</p><br><p>" + 
+        "Vote: " + motions[randomProperty].Vote
+        + "</p><br><p>" + 
+        "Reconsider: " + motions[randomProperty].Reconsider
+    } else {
+        studyNote.innerHTML = "Title: " + motions[randomProperty].Title
+        + "</p><br><p>" + 
+        "Class: " + motions[randomProperty].Class
+        + "</p><br><p>" + 
+        "Interrupt: " + motions[randomProperty].Interrupt
+        + "</p><br><p>" + 
+        "Second: " + motions[randomProperty].Second
+        + "</p><br><p>" + 
+        "Debatable: " + motions[randomProperty].Debatable
+        + "</p><br><p>" + 
+        "Amendable: " + motions[randomProperty].Amendable
+        + "</p><br><p>" + 
+        "Vote: " + motions[randomProperty].Vote
+        + "</p><br><p>" + 
+        "Reconsider: " + motions[randomProperty].Reconsider
+        + "</p><br><p>" + 
+        "notes: " + motions[randomProperty].notes
+    }
+    
 }

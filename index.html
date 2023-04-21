@@ -24,43 +24,52 @@
             </ul>
       </div>
 
-        <section>
-            <h1>
-                Sign Up
-            </h1>
-        </section>
-        <form>
-           
-            <label for="first_name">First name*</label>
-            <input type="text" id="first_name" name="first_name" placeholder="John" required pattern="[A-Z][a-z]*">
-            <br>
-            <label for="last_name">Last name*</label>
-            <input type="text" id="last_name" name="last_name" placeholder="Doe" required pattern="[A-Z][a-z]*">
-            <br>
-            <label for="age">Birth date*</label>
-            <input type="text" id="age" name="age" required placeholder="MM/DD/YYYY" onfocus="(this.type='date')">
-            <br>
-            <label for="phoneNumber">Phone Number</label>
-            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="191-123-456-7890">
-            <br>
-            <label for="Email">Email*</label>
-            <input type="text" id="email" name="Email" placeholder="tothe.stars@gmail.com" required>
-            <br>
-            <label for="idNumber">TSA ID</label>
-            <input type="text" id="userTSAID" name ="userTSAID" placeholder="2004-009" required>
-          
-            <label for="password1">password*</label>
-            <input type="password" id="password1" name="password1" required pattern="\S{8,}" placeholder="">
+      <div style="display: grid; grid-template-columns: 50% 50%;">
+        <div style="grid-column: 1;">
+            <img src="images/Logo.png" style="margin-top: 10vh; margin-left: auto; margin-right: auto; width: 80%; height: auto;">
+        </div>
+        <div style="grid-column: 2;">
+            <section>
+                <h1>
+                    Sign Up
+                </h1>
+            </section>
+            <form>
+               
+                <label for="first_name">First name*</label>
+                <input type="text" id="first_name" name="first_name" placeholder="John" required pattern="[A-Z][a-z]*">
+                <br>
+                <label for="last_name">Last name*</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Doe" required pattern="[A-Z][a-z]*">
+                <br>
+                <label for="age">Birth date*</label>
+                <input type="text" id="age" name="age" required placeholder="MM/DD/YYYY" onfocus="(this.type='date')">
+                <br>
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" placeholder="191-123-456-7890">
+                <br>
+                <label for="Email">Email*</label>
+                <input type="text" id="email" name="Email" placeholder="tothe.stars@gmail.com" required>
+                <br>
+                <label for="idNumber">TSA ID</label>
+                <input type="text" id="userTSAID" name ="userTSAID" placeholder="2004-009" required>
+              
+                <label for="password1">password*</label>
+                <input type="password" id="password1" name="password1" required pattern="\S{8,}" placeholder="********">
+                
+                <p style="font-size:medium;">*must be at least 8 characters</p>
+                <label for="password2">confirm password*</label>
+                <input type="password" id="password2" name="password2" required pattern="\S{8,}" placeholder="********">
+                <br>
             
-            <p style="font-size:medium;">*must be at least 8 characters</p>
-            <label for="password2">confirm password*</label>
-            <input type="password" id="password2" name="password2" required pattern="\S{8,}" placeholder="">
-            <br>
+      
+                <button id = "submitButton" class="buttonToAnimate" type="button">Sign Up</button>
+                
+            </form>
+        </div>
+    </div>
+
         
-  
-            <button id = "submitButton" class="buttonToAnimate" type="button">Sign Up</button>
-            
-        </form>
     <footer>
         <p>Copyright @ 2023</p>
     </footer>

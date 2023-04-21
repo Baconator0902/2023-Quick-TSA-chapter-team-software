@@ -5,10 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Home</title>
+
+    <style>
+
+        #pants, #shirt, #text {
+            position: absolute;
+            transition: top 2s;
+        }
+        #pants {
+            left: 19.5vw;
+            top: 45vh;
+        }
+        #shirt {
+            left: 20vw;
+            top: 30vh;
+        }
+        #text {
+            left: 30vw;
+            top: 40vh;
+        }
+        .b {
+            top: 500vh !important;
+        }
+        .a {
+            top: 39vh !important;
+        }
+    </style>
    
 </head>
 <body>
@@ -22,29 +49,47 @@
             </ul>
       </div>
 
-        <section>
-            <h1>
-                Log in
-            </h1>
-        </section>
-        <form>
+        
+        <div style="display: grid; grid-template-columns: 50% 50%;">
+            <div id="logoDiv" style="grid-column: 1; display: grid; grid-template-columns: 60% 40%; grid-template-rows: 50% 50%;">
+                    
+                    <img src="/images/Shirt 1.png" id="shirt">
+                    <img src="/images/pants.png" id="pants">
+                    <img src="/images/Text.png" id="text">
+            </div>
+            <div style="grid-column: 2;">
+                <section>
+                    <h1>
+                        Log in
+                    </h1>
+                </section>
+                <form>
     
 
-            <label for="loginEmail">Email*</label>
-            <input type="text" id="loginEmail" name="Email" placeholder="tothe.stars@gmail.com" required>
-            <br>
-         
+                    <label for="loginEmail">Email*</label>
+                    <input type="text" id="loginEmail" name="Email" placeholder="tothe.stars@gmail.com" required>
+                    <br>
+                 
+                  
+                    <label for="loginPassword">password*</label>
+                    <input type="password" id="loginPassword" name="password1" required pattern="\S{8,}" placeholder="********">
+                    
           
-            <label for="loginPassword">password*</label>
-            <input type="password" id="loginPassword" name="password1" required pattern="\S{8,}" placeholder="">
-            
-  
-            <button id = "loginButton" class="buttonToAnimate" type="button">Log In</button>
-                
-        </form>
+                    <button id = "loginButton" class="buttonToAnimate" type="button">Log In</button>
+                        
+                </form>
+            </div>
+        </div>
+        
     <footer>
         <p>Copyright @ 2023</p>
     </footer>
+    <script>
+        $("#logoDiv").click(function() {
+        $('#pants').toggleClass("b");   
+        $('#shirt').toggleClass("a");   
+        });
+    </script>
     <script type="module" src="/src/login.js"></script>
     <script type="module" src="/src/firebaseInit.js"></script>
 </body>
