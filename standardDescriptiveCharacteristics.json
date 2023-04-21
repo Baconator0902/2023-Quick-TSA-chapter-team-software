@@ -1,0 +1,236 @@
+{
+    "motions": {
+        "main Motion": {
+            "Title" : "Main Motion",
+            "Class" : "M",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : true,
+            "Vote" : "majority",
+            "Reconsider" : "always",
+            "notes": "not always majority vote (pg 103-104)"
+        },
+        "adjourn": {
+            "Title" : "adjourn",
+            "Class" : "P",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : false,
+            "Amendable" : false,
+            "Vote" : "majority",
+            "Reconsider" : "never",
+            "notes": "Main in some cases"
+        },
+        "Adopt report": {
+            "Title" : "Adopt Report",
+            "Class" : "M",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : true,
+            "Vote" : "majority",
+            "Reconsider" : "always",
+            "notes": ""
+        },
+        "Adopt bylaws initially": {
+            "Title" : "Adopt bylaws initially",
+            "Class" : "M",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : true,
+            "Vote" : "majority",
+            "Reconsider" : "Negative",
+            "notes": ""
+        },
+        "Adopt revised bylaws": {
+            "Title" : "Adopt revised bylaws",
+            "Class" : "M/B",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : true,
+            "Vote" : "As specified in bylaws",
+            "Reconsider" : "always",
+            "notes": ""
+        },
+        "Amend": {
+            "Title" : "Amend",
+            "Class" : "S",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : true,
+            "Vote" : "majority",
+            "Reconsider" : "always",
+            "notes": "Only debatable if motion to be amended is debatable."
+        },
+        "Amending an amendment": {
+            "Title" : "Amend an amendment of a pending question",
+            "Class" : "S",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : true,
+            "Vote" : "majority",
+            "Reconsider" : "always",
+            "notes": "Only debatable if motion to be amended is debatable."
+        },
+        "Amend something previously adopted": {
+            "Title" : "Amend something previously adopted",
+            "Class" : "M/B",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : true,
+            "Vote" : "2/3, majority of entire membership, or majority with previous notice",
+            "Reconsider" : "negative",
+            "notes": ""
+        },
+        "Amend Bylaws": {
+            "Title" : "Amend bylaws",
+            "Class" : "M/B",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : true,
+            "Vote" : "As specified in bylaws",
+            "Reconsider" : "negative",
+            "notes": ""
+        },
+        "Appeal": {
+            "Title" : "Appeal",
+            "Class" : "I",
+            "Interrupt" : true,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : false,
+            "Vote" : "majority vote in negative",
+            "Reconsider" : "always",
+            "notes": ""
+        },
+        "To create a blank": {
+            "Title" : "To create a blank",
+            "Class" : "I",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : false,
+            "Amendable" : false,
+            "Vote" : "majority",
+            "Reconsider" : "never",
+            "notes": ""
+        },
+        "Commit/Refer": {
+            "Title" : "Commit/Refer",
+            "Class" : "S",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : true,
+            "Vote" : "majority",
+            "Reconsider" : "always",
+            "notes": "Only reconsiderable until committee has begun consideration"
+        },
+        "Consider informally": {
+            "Title" : "Consider informally",
+            "Class" : "S",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : true,
+            "Vote" : "majority",
+            "Reconsider" : "Negative",
+            "notes": "Debate limited to merits of considering informally, not on the main motion"
+        },
+        "To limit/extend limits of debate": {
+            "Title" : "To limit/extend limits of debate",
+            "Class" : "S",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : false,
+            "Amendable" : true,
+            "Vote" : "2/3",
+            "Reconsider" : "always",
+            "notes": "not always majority vote (pg 103-104)"
+        },
+        "main Motion": {
+            "Title" : "Main Motion",
+            "Class" : "Main",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : true,
+            "Vote" : "majority",
+            "Reconsider" : "always",
+            "notes": "not always majority vote (pg 103-104)"
+        },
+        "main Motion": {
+            "Title" : "Main Motion",
+            "Class" : "Main",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : true,
+            "Vote" : "majority",
+            "Reconsider" : "always",
+            "notes": "not always majority vote (pg 103-104)"
+        },
+        "main Motion": {
+            "Title" : "Main Motion",
+            "Class" : "Main",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : true,
+            "Vote" : "majority",
+            "Reconsider" : "always",
+            "notes": "not always majority vote (pg 103-104)"
+        },
+        "main Motion": {
+            "Title" : "Main Motion",
+            "Class" : "Main",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : true,
+            "Vote" : "majority",
+            "Reconsider" : "always",
+            "notes": "not always majority vote (pg 103-104)"
+        },
+        "main Motion": {
+            "Title" : "Main Motion",
+            "Class" : "Main",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : true,
+            "Vote" : "majority",
+            "Reconsider" : "always",
+            "notes": "not always majority vote (pg 103-104)"
+        },
+        "main Motion": {
+            "Title" : "Main Motion",
+            "Class" : "Main",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : true,
+            "Vote" : "majority",
+            "Reconsider" : "always",
+            "notes": "not always majority vote (pg 103-104)"
+        },
+        "main Motion": {
+            "Title" : "Main Motion",
+            "Class" : "Main",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : true,
+            "Vote" : "majority",
+            "Reconsider" : "always",
+            "notes": "not always majority vote (pg 103-104)"
+        }
+        
+    }
+}
