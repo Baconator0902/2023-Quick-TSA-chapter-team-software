@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Events</title>
+</head>
+
+<body>
+        <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <div class="wrapper">
+            <ul>
+                <li><a href="./chapter.html">Chapter</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+                <li><a href="./signout.html">Sign Out</a></li>
+            </ul>
+      </div>
+
+        <section>
+            <h1>
+                Generate parli pro motions
+            </h1>
+            <button onclick="generateChapterTeamMotions()">Generate</button>
+            <p id="motions">
+
+            </p>
+        </section>
+        
+        <footer>
+            <p>Copyright @ 2023</p>
+        </footer>
+        <script type="module" src="/src/lockUserOut.js"></script>
+        <script type="module" src="/src/firebaseInit.js"></script>
+     <script type="module" src="/src/interests.js"></script>
+
+</body>
+
+</html>
