@@ -152,84 +152,238 @@
             "Amendable" : true,
             "Vote" : "2/3",
             "Reconsider" : "always",
-            "notes": "not always majority vote (pg 103-104)"
+            "notes": "If vote is affirmative, can only reconsider unexecuted part"
         },
-        "main Motion": {
-            "Title" : "Main Motion",
-            "Class" : "Main",
+        "Discharge a committee": {
+            "Title" : "Discharge a committee",
+            "Class" : "M/B",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : true,
+            "Vote" : "2/3",
+            "Reconsider" : "always",
+            "notes": ""
+        },
+        "Division of the assembly": {
+            "Title" : "Division of the assembly",
+            "Class" : "I",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : false,
+            "Amendable" : true,
+            "Vote" : "majority",
+            "Reconsider" : "never",
+            "notes": ""
+        },
+        "Division of the question": {
+            "Title" : "Division of the question",
+            "Class" : "I",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : false,
+            "Amendable" : true,
+            "Vote" : "majority",
+            "Reconsider" : "never",
+            "notes": ""
+        },
+        "To be excused from a duty": {
+            "Title" : "To be excused from a duty",
+            "Class" : "I",
+            "Interrupt" : true,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : true,
+            "Vote" : "majority",
+            "Reconsider" : "negative",
+            "notes": "Does not need a second if moved by another member"
+        },
+        "Fix the time at which to adjourn": {
+            "Title" : "Fix the time at which to adjourn",
+            "Class" : "P",
             "Interrupt" : false,
             "Second" : true,
             "Debatable" : true,
             "Amendable" : true,
             "Vote" : "majority",
             "Reconsider" : "always",
-            "notes": "not always majority vote (pg 103-104)"
+            "notes": "can be a main motion"
         },
-        "main Motion": {
-            "Title" : "Main Motion",
-            "Class" : "Main",
+        "Request for Information": {
+            "Title" : "Request for Information",
+            "Class" : "I",
+            "Interrupt" : true,
+            "Second" : false,
+            "Debatable" : false,
+            "Amendable" : false,
+            "Vote" : "not voted",
+            "Reconsider" : "never",
+            "notes": ""
+        },
+        "Lay on the Table": {
+            "Title" : "Lay on the Table",
+            "Class" : "S",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : false,
+            "Amendable" : false,
+            "Vote" : "majority",
+            "Reconsider" : "negative",
+            "notes": ""
+        },
+        "To approve minutes": {
+            "Title" : "To approve minutes",
+            "Class" : "M",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : true,
+            "Vote" : "not voted",
+            "Reconsider" : "negative",
+            "notes": ""
+        },
+        "Close nominations": {
+            "Title" : "Close nominations",
+            "Class" : "I",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : false,
+            "Amendable" : true,
+            "Vote" : "majority",
+            "Reconsider" : "negative",
+            "notes": ""
+        },
+        "Objection to the consideration of the question": {
+            "Title" : "Objection to the consideration of the question",
+            "Class" : "I",
+            "Interrupt" : true,
+            "Second" : false,
+            "Debatable" : false,
+            "Amendable" : false,
+            "Vote" : "2/3 against",
+            "Reconsider" : "negative",
+            "notes": ""
+        },
+        "Call for the orders of the day": {
+            "Title" : "Call for the orders of the day",
+            "Class" : "P",
+            "Interrupt" : true,
+            "Second" : false,
+            "Debatable" : false,
+            "Amendable" : false,
+            "Vote" : "2/3",
+            "Reconsider" : "always",
+            "notes": ""
+        },
+        "Point of order": {
+            "Title" : "Point of order",
+            "Class" : "I",
+            "Interrupt" : true,
+            "Second" : false,
+            "Debatable" : false,
+            "Amendable" : false,
+            "Vote" : "chair",
+            "Reconsider" : "",
+            "notes": ""
+        },
+        "Parliamentary Inquiry": {
+            "Title" : "Parliamentary Inquiry",
+            "Class" : "I",
+            "Interrupt" : true,
+            "Second" : false,
+            "Debatable" : false,
+            "Amendable" : false,
+            "Vote" : "chair",
+            "Reconsider" : "",
+            "notes": ""
+        },
+        "Postpone Indefinately": {
+            "Title" : "Postpone Indefinately",
+            "Class" : "S",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : true,
+            "Amendable" : false,
+            "Vote" : "majority",
+            "Reconsider" : "affirmative",
+            "notes": "only motion that can only be reconsidered in the affirmative"
+        },
+        "Postpone definately": {
+            "Title" : "Postpone definately",
+            "Class" : "S",
             "Interrupt" : false,
             "Second" : true,
             "Debatable" : true,
             "Amendable" : true,
             "Vote" : "majority",
             "Reconsider" : "always",
-            "notes": "not always majority vote (pg 103-104)"
+            "notes": "Can only postpone until the next regular meeting; debate can only go into whether it should be postponed"
         },
-        "main Motion": {
-            "Title" : "Main Motion",
-            "Class" : "Main",
+        "Previous Question": {
+            "Title" : "Previous Question",
+            "Class" : "MS",
+            "Interrupt" : false,
+            "Second" : true,
+            "Debatable" : false,
+            "Amendable" : false,
+            "Vote" : "2/3",
+            "Reconsider" : "always",
+            "notes": "Reconsidering affirmative can only go until any vote has been taken"
+        },
+        "Question of privilege": {
+            "Title" : "Question of privilege",
+            "Class" : "P",
+            "Interrupt" : true,
+            "Second" : false,
+            "Debatable" : false,
+            "Amendable" : false,
+            "Vote" : "chair",
+            "Reconsider" : "never",
+            "notes": "should not interrupt a person who has begun to speak; if raised in the form of a motion it should be seconded"
+        },
+        "Recess": {
+            "Title" : "Recess",
+            "Class" : "P",
             "Interrupt" : false,
             "Second" : true,
             "Debatable" : true,
             "Amendable" : true,
             "Vote" : "majority",
-            "Reconsider" : "always",
-            "notes": "not always majority vote (pg 103-104)"
+            "Reconsider" : "never",
+            "notes": "can be a main motion"
         },
-        "main Motion": {
-            "Title" : "Main Motion",
-            "Class" : "Main",
+        "Reconsider": {
+            "Title" : "Reconsider",
+            "Class" : "B",
             "Interrupt" : false,
             "Second" : true,
             "Debatable" : true,
-            "Amendable" : true,
+            "Amendable" : false,
             "Vote" : "majority",
-            "Reconsider" : "always",
-            "notes": "not always majority vote (pg 103-104)"
+            "Reconsider" : "never",
+            "notes": "can interrupt when another member has the floor but has not begun to speak; highest precedence to make but not to vote on"
         },
-        "main Motion": {
-            "Title" : "Main Motion",
-            "Class" : "Main",
+        "Suspend the rules": {
+            "Title" : "Suspend the rules",
+            "Class" : "I",
             "Interrupt" : false,
             "Second" : true,
-            "Debatable" : true,
-            "Amendable" : true,
+            "Debatable" : false,
+            "Amendable" : false,
             "Vote" : "majority",
-            "Reconsider" : "always",
-            "notes": "not always majority vote (pg 103-104)"
+            "Reconsider" : "never",
+            "notes": ""
         },
-        "main Motion": {
-            "Title" : "Main Motion",
-            "Class" : "Main",
+        "Take from the table": {
+            "Title" : "Take from the table",
+            "Class" : "B",
             "Interrupt" : false,
             "Second" : true,
-            "Debatable" : true,
-            "Amendable" : true,
+            "Debatable" : false,
+            "Amendable" : false,
             "Vote" : "majority",
-            "Reconsider" : "always",
-            "notes": "not always majority vote (pg 103-104)"
-        },
-        "main Motion": {
-            "Title" : "Main Motion",
-            "Class" : "Main",
-            "Interrupt" : false,
-            "Second" : true,
-            "Debatable" : true,
-            "Amendable" : true,
-            "Vote" : "majority",
-            "Reconsider" : "always",
-            "notes": "not always majority vote (pg 103-104)"
+            "Reconsider" : "never",
+            "notes": ""
         }
         
     }
