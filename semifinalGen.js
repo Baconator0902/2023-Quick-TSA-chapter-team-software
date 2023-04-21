@@ -44,17 +44,16 @@ function generateChapterTeamMotions() {
     
       var officerMotion = ["", "", "", "", "", ""];
     
-      var rng = Random();
     
       var outPutText = "";
       for (var i = 0; i < officers.length; i++) {
-        var motionNum = rng.nextInt(actions.length - 1);
+        var motionNum = Math.floor(Math.random() * (actions.length - 1));
         var chosenMotion = actions[motionNum];
-        officerMotion[i] = '${officers[i]}: $chosenMotion';
-        actions.remove(chosenMotion);
+        officerMotion[i] = officers[i] + ': ' + chosenMotion;
+        actions.splice(actions.indexOf(chosenMotion), 1);
       }
       for (var i = 0; i < officerMotion.length; i++) {
-        outPutText = '${outPutText + officerMotion[i]}\n';
+        outPutText = outPutText + officerMotion[i] + '</p><br><p>';
       }
       var motionstext = document.getElementById('motions');
       motionstext.innerHTML = outPutText;
