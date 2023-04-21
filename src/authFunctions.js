@@ -48,7 +48,9 @@ function signUpWithEmail(){
                     email : "",
                     compLevel : "",
                     maxTeam : "",
-                    yearsinClub: ""
+                    yearsinClub: "",
+                    currentNote: "",
+                    eventNote: ""
                     
                 })
                 .then(()=>{       window.location.replace("./profile.html");});
