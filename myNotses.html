@@ -16,27 +16,32 @@
         <div class="wrapper">
             <ul>
 
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="events.html">About Me</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+                <li><a href="./events.html">About Me</a></li>
                 <li><a href="./chopterTom.html">parliPro</a></li>
-                <li><a href="chapter.html">Chapter</a></li>
-                <li><a href="./myNotses.html">My Notes</a></li>
+                <li><a href="./chapter.html">Chapter</a></li>
+                <li><a href="./signout.html">Sign Out</a></li>
                 
             </ul>
       </div>
 
         <section>
-            <h1>
-                Log Out?
-                <form>
-                    <button id = "logOutButton" class="buttonToAnimate" type="button">Log Out</button>
-                </form>
-            </h1>
+            <h1>Create Note?</h1>
+            <label for="Event Header">What event is this note for?</label>
+            <input type="eventPicked" id="eventPicked" name="eventPicked" placeholder="Biotech"  required>
+            
+            <label for="note">Note:</label>
+            <input type="note" id="note" name="note" placeholder="note here"  required>
+  
+            <button id = "noteMaker" class="buttonToAnimate" type="button">Create Note</button>
+
+            <h1>Current Note:</h1>
+            <p id="notesParagraph"></p>
         </section>
     <footer>
         <p>Copyright @ 2023</p>
     </footer>
-    <script type="module" src="/src/firebaseInit.js"></script>
-    <script type="module" src="/src/logout.js"></script>
+    <script type= "module" src ="/src/notesPage.js"></script>
+
 </body>
 </html>
