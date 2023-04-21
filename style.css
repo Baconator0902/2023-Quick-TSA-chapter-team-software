@@ -1,7 +1,7 @@
 
 *{
     margin: 0;
-    color: rgb(255, 36, 36);
+    color: #000;
     font-size: 1em;
     text-shadow: 1px 1px black;
     padding: 0;
@@ -11,21 +11,24 @@
     font-family: 'Oswald', sans-serif;
   }
   body {
-
-    background-color: rgb(6, 81, 104);
+    min-height: 100vh;
+    background-image: url(./images/Sign\ Up\ Background.png);
+    background-size: cover;
   }
   form {
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 60%;
-    border: 10px solid gray;
-    background-color: black;
     margin-left: auto;
     margin-right: auto;
   }
   footer {
-    padding: 10px;
+    padding: 2.5vh;
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    height: 10vh;
+    position: sticky;
+    top: 90vh;
     font-size: 1.5em;
     margin: 0;
     background-color:  rgb(0, 55, 71) !important;
@@ -178,6 +181,10 @@ button {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+button:hover {
+    background-color: #14ffe9;
 }
 
 button, a {
