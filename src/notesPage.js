@@ -29,7 +29,7 @@ function defaultReference2(userId){
     return onValue(ref(database, 'users/' + userId), (snapshot) => {
         const eventNote = (snapshot.val() && snapshot.val().eventNoteFor);
         const currentNote = (snapshot.val() && snapshot.val().currentNote);
-        if(yearsExp != ''){
+        if(currentNote != '' || currentNote != null){
             document.getElementById("notesParagraph").innerHTML = "For: " + eventNote + " I need to: " + currentNote;
         }
         else{
